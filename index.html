@@ -1,437 +1,981 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./validation.css" />
+    <link rel="stylesheet" href="./sidebarmenu.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <!-- Boxicon -->
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="header">
-        <a href="#"><img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/logo.png" class="logo" alt=""></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-                
-            </ul>
-        </div>
-        <div id="mobile">
+      <a href="#"
+        ><img
+          src="./img/Build-and-Deploy-Ecommerce-Website-main/img/logo.png"
+          class="logo"
+          alt=""
+      /></a>
+      
+        <ul id="navbar">
+          <li><a class="home active" href="#">Home</a></li>
+          <li><a class="shop" href="#product1">Shop</a></li>
+          <li><a class="blog" href="blog.html">Blog</a></li>
+          <li><a class="about" href="about.html">About</a></li>
+          <li><a class="contact" href="contact.html">Contact</a></li>
+          <li id="lg-bag">
             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-            <i id="bar" class="fa fa-outdent"></i>
-        </div>
+          </li>
+          <div class="signin-singout">
+            <button class="Login">
+              <i class="fa-solid fa-user icon-login"></i>Sign in
+            </button>
 
+            <div class="bridge"></div>
+            <div class="menu-login-logout">
+              <ul class="option-log">
+                <li class="option-menu option-login">Sign up</li>
+                <li class="option-menu option-logout">Sign in</li>
+              </ul>
+            </div>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+          <div class="user-avatar">
+            <img class="img-user" src="./img/user/user1.png" alt="" />
+            <div class="bridge"></div>
+            <div class="menu-user">
+              <ul class="option-user-menu">
+                <li class="option-user">
+                  Profile <i class="fa-solid fa-user"></i>
+                </li>
+                <li class="option-user">
+                  Phone <i class="fa-solid fa-phone"></i>
+                </li>
+                <li class="option-user option-user-signOut">
+                  Sing out <i class="fa-solid fa-right-from-bracket"></i>
+                </li>
+                <li class="option-user">
+                  Setting <i class="fa-solid fa-gear"></i>
+                </li>
+              </ul>
+            </div>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </ul>
+      </div>
+      <div class="btn-bars"><i class="fa-solid fa-bars toggle"></i></div>
 
-
+      <div id="mobile"></div>
     </section>
 
-    <section id="hero">
+    <!-- Sidebar Menu -->
+    <div class="container-content">
+      <div class="container">
+        <nav class="sidebar close sidebar-event">
+          <header>
+            <div class="image-text">
+              <span class="image">
+                <!--<img src="logo.png" alt="">-->
+              </span>
 
+              <div class="text logo-text">
+                <span class="name">CaraShop</span>
+                <span class="profession">Web developer</span>
+              </div>
+            </div>
+            <i class="fa-sharp fa-solid fa-circle-left close-btn toggle"></i>
+            <!-- <i class="fa-solid fa-xmark toggle close-btn"></i> -->
+          </header>
+
+          <div class="menu-bar">
+            <div class="menu">
+              <li class="search-box">
+                <i class="bx bx-search icon"></i>
+                <input type="text" placeholder="Search..." />
+              </li>
+
+              <ul class="menu-links">
+                <li class="nav-link">
+                  <a href="#">
+                    <i class="bx bx-home-alt icon"></i>
+                    <span class="text nav-text">Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="#">
+                    <i class="bx bx-bar-chart-alt-2 icon"></i>
+                    <span class="text nav-text">Revenue</span>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="#">
+                    <i class="bx bx-bell icon"></i>
+                    <span class="text nav-text">Notifications</span>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="#">
+                    <i class="bx bx-heart icon"></i>
+                    <span class="text nav-text">Likes</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bottom-content">
+              <li class="">
+                <a href="#">
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="text nav-text">Logout</span>
+                </a>
+              </li>
+
+              <li class="mode">
+                <div class="sun-moon">
+                  <i class="bx bx-moon icon moon"></i>
+                  <i class="bx bx-sun icon sun"></i>
+                </div>
+                <span class="mode-text text">Dark mode</span>
+
+                <div class="toggle-switch">
+                  <span class="switch"></span>
+                </div>
+              </li>
+            </div>
+          </div>
+        </nav>
+        <div class="message-notification">
+          <div class="toast-message">
+            <span class="message-text">Chúc mừng bạn đăng ký thành công</span>
+            <div class="close-val">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="icon-success">
+              <div class="icon-item">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message-notification-fail">
+          <div class="toast-message">
+            <span class="message-text"
+              >Đăng nhập thất bại vui lòng đăng nhập lại</span
+            >
+            <div class="close-val">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="icon-success">
+              <div class="icon-fail">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form
+          action=""
+          method="POST"
+          class="form form-1 modal-container"
+          id="form-1"
+        >
+          <div class="close-val close-val1">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <h3 class="heading">Thành viên đăng ký</h3>
+          <p class="desc">Chào mừng đến với Shop ❤️</p>
+          <div class="spacer"></div>
+
+          <div class="form-group">
+            <label for="fullname" class="form-label">Tên đầy đủ</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="VD: Nguyễn Hồng Sơn"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="VD: email@domain.com"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Nhập mật khẩu"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password_confirmation" class="form-label"
+              >Nhập lại mật khẩu</label
+            >
+            <input
+              type="password"
+              name="password_confirmation"
+              id="password_confirmation"
+              placeholder="Nhập lại mật khẩu"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="province" class="form-label">Tỉnh/TP</label>
+            <select name="province" id="province" class="form-control">
+              <option value="">--Tỉnh/TP--</option>
+              <option value="vtau">--Vũng Tàu--</option>
+              <option value="hcm">--Hồ Chí Minh--</option>
+            </select>
+            <span class="form-message"></span>
+          </div>
+          <!-- <div class="form-group">
+            <label for="password_confirmation" class="form-label"
+              >Giới tính</label
+            >
+          </div>
+
+          <div class="form-group genderformat">
+            <div>
+              <input
+                type="checkbox"
+                name="gender"
+                value="male"
+                id="gender"
+                class="form-control"
+              />
+              <span id="gender">Nam</span>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="gender"
+                value="female"
+                id="gender"
+                class="form-control"
+              />
+              <span id="gender">Nữ</span>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="gender"
+                value="other"
+                class="form-control"
+                id="gender"
+              />
+              <span id="gender">Khác</span>
+            </div>
+            <span class="form-message"></span>
+          </div> -->
+
+          <button class="form-submit form-submit-1">Đăng ký</button>
+        </form>
+        <form
+          action=""
+          method="POST"
+          class="form form-2 modal-container2"
+          id="form-2"
+        >
+          <div class="close-val close-val2">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <h3 class="heading">Thành viên đăng nhập</h3>
+          <p class="desc">Chào mừng đến với Shop ❤️</p>
+          <div class="spacer"></div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="VD: email@domain.com"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Nhập mật khẩu"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+
+          <button class="form-submit form-submit-2">Đăng nhập</button>
+        </form>
+      </div>
+      <section id="hero">
         <h4>Trade-in-offer</h4>
         <h2>Super value deals</h2>
         <h1>On all products</h1>
         <p>Save more with coupons & up to 70% off!</p>
         <button>Shop now</button>
-    </section>
+      </section>
 
-    <section id="feature" class="section-p1">
+      <section id="feature" class="section-p1">
         <div class="fe-box">
-            <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
+          <img
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f1.png"
+            alt=""
+          />
+          <h6>Free Shipping</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f2.png" alt="">
-            <h6>Online Order</h6>
+          <img
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f2.png"
+            alt=""
+          />
+          <h6>Online Order</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f3.png" alt="">
-            <h6>Save Money</h6>
+          <img
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f3.png"
+            alt=""
+          />
+          <h6>Save Money</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f4.png" alt="">
-            <h6>Promotions</h6>
+          <img
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f4.png"
+            alt=""
+          />
+          <h6>Promotions</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f5.png" alt="">
-            <h6>Happy Sell</h6>
+          <img
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f5.png"
+            alt=""
+          />
+          <h6>Happy Sell</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f6.png" alt="">
-            <h6>F24/7 Support</h6>
+          <img
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/features/f6.png"
+            alt=""
+          />
+          <h6>F24/7 Support</h6>
         </div>
-    </section>
-
-    <section id="product1" class="section-p1" >
+      </section>
+      <div class="comeback-home">
+        <button class="btn-up"><a href="#"><i class="fa-solid fa-circle-up "></i></a></button></div>
+      <div>
+      <section id="product1" class="section-p1">
         <h2>Featured Products</h2>
         <p>Summer Collecton New Morden Design</p>
         <div class="pro-container">
-            <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+          <!-- <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
             </div>
-            <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f3.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f4.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f5.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f6.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f7.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f8.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            <a href="#">
+              <i class="fa-solid fa-heart cart"></i>
+            </a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
             </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f3.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f4.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f5.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f6.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f7.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f8.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div> -->
         </div>
-    </section>
+        <!-- <div class="show-more">
+          <button class="btn-show-more normal">Show More</button>
+        </div> -->
+        <div class="detail-container">
+          <div class="detail-pro">
+            
+      
+         <section id="prodetails" class="section-p1">
+          <div class="single-pro-image">
+            <div class="close-detail"><i class="fa-solid fa-xmark btn-close-detail
+              "></i></div>
+              <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg" width="100%" id="MainImg" alt="">
+              <div class="small-img-group">
+                  <div class="small-img-col">
+                      <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg" width="100%" class ="small-img" alt="">
+      
+      
+                  </div>
+                  <div class="small-img-col">
+                      <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg" width="100%" class ="small-img" alt="">
+      
+      
+                  </div>
+                  <div class="small-img-col">
+                      <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f3.jpg" width="100%" class ="small-img" alt="">
+                      
+      
+                  </div>
+                  <div class="small-img-col">
+                      <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f4.jpg" width="100%" class ="small-img" alt="">
+                      
+      
+                  </div>
+      
+              </div>
+          
+          
+          </div>
+          <div class="single-pro-details">
+              <!-- <h6>Home /T-Shirt</h6>
+              <h4>Main's Fashion T Shirt</h4>
+              <h2 class="price-pro-detail">$139.00</h2>
+              <select name="" id="">
+                  <option value="">Select size</option>
+                  <option value="">XL</option>
+                  <option value="">XXL</option>
+                  <option value="">Small</option>
+                  <option value="">Large</option>
+              </select>
+              <div class="total-cartshop"> <input type="number" value="1" min="1">
+                <button class="normal">Add To Cart</button></div>
+             
+             
+              <h4>Product Details</h4>
+              <div class="details-product">
 
-    <section id="banner" class="section-m1">
+                <span>Cotton, the most common T-shirt material,
+                    has been grown by humans for over 7,000 years.
+                    The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world.
+                    China and India are currently the two largest producers of cotton in the world, with a total combined production of  production total of 61 million bales annually.  The United States is currently the largest exporter of raw cotton, with sales of $4.9 billion annually. The worldwide cotton market is estimated to total at $12 billion.  
+        
+                </span>
+              </div> -->
+      
+          </div>
+         </section>
+
+          </div>
+
+        </div>
+        <div class="paging-item">
+          <button class="btn-prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="number-page">
+            <!-- <button class="btn-1">1</button>
+            <button class="btn-2">2</button>
+            <button class="btn-3">3</button> -->
+          </div>
+          <button class="btn-next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="banner" class="section-m1">
         <h4>Repair Services</h4>
         <h2>Up to <span>70% Off</span> - All T-Shirts & Accessories</h2>
         <button class="normal">Explore More</button>
-    </section>
-    <section id="product1" class="section-p1" >
+      </section>
+      <section id="product1" class="section-p1">
         <h2>New Arrivals</h2>
         <p>Summer Collecton New Morden Design</p>
         <div class="pro-container">
-            <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n1.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n1.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
             </div>
-            <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n2.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n3.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n4.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n5.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n6.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n7.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
-            </div> <div class="pro">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n8.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> 
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n2.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
             </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n3.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n4.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n5.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n6.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n7.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n8.jpg"
+              alt=""
+            />
+            <div class="des">
+              <span>Adidas</span>
+              <h5>Cartoon Astronaut T-Shirts</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-heart cart"></i></a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="sm-banner"  class="section-p1">
+      <section id="sm-banner" class="section-p1">
         <div class="banner-box">
-            <h4>crazy deals</h4>
-            <h2>buy 1 get 1 free</h2>
-            <span>The best classic dress is on sale of cara</span>
-            <button class="white">Learn More</button>
+          <h4>crazy deals</h4>
+          <h2>buy 1 get 1 free</h2>
+          <span>The best classic dress is on sale of cara</span>
+          <button class="white">Learn More</button>
         </div>
         <div class="banner-box banner-box2">
-            <h4>spring/summer</h4>
-            <h2>upcomming season</h2>
-            <span>The best classic dress is on sale of cara</span>
-            <button class="white">Collection</button>
+          <h4>spring/summer</h4>
+          <h2>upcomming season</h2>
+          <span>The best classic dress is on sale of cara</span>
+          <button class="white">Collection</button>
         </div>
-      
-    </section>
-    <section id="banner3">
+      </section>
+      <section id="banner3">
         <div class="banner-box">
-           
-            <h2>SEASONAL SALE</h2>
-            <h3>Winter Collection -50% OFF</h3>
-            
+          <h2>SEASONAL SALE</h2>
+          <h3>Winter Collection -50% OFF</h3>
         </div>
         <div class="banner-box banner-box2">
-           
-            <h2>NEW FOOTWEAR COLLECTION</h2>
-            <h3>Spring / Summer 2022</h3>
-            
+          <h2>NEW FOOTWEAR COLLECTION</h2>
+          <h3>Spring / Summer 2022</h3>
         </div>
         <div class="banner-box banner-box3">
-           
-            <h2>T-Shirts</h2>
-            <h3>New Trendy Prints</h3>
-            
+          <h2>T-Shirts</h2>
+          <h3>New Trendy Prints</h3>
         </div>
-    </section>
+      </section>
 
-    <section id="newsletter" class="section-p1" class="section-m1">
+      <section id="newsletter" class="section-p1" class="section-m1">
         <div class="newstext">
-            <h4>Sing Up For Newsletter</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+          <h4>Sing Up For Newsletter</h4>
+          <p>
+            Get E-mail updates about our latest shop and
+            <span>special offers.</span>
+          </p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Your email address" name="" id="">
-       
-            <button class="normal">Sing Up</button>
-        </div>
-    </section>
+          <input type="text" placeholder="Your email address" name="" id="" />
 
-    <footer class="section-p1" >
+          <button class="normal">Sing Up</button>
+        </div>
+      </section>
+
+      <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="./img/Build-and-Deploy-Ecommerce-Website-main/img/logo.png" alt="">
-            <h4>Contact</h4>
-            <p><strong>Address: </strong>562 Wellington Road,Street 32, San Francisco</p>
-            <p><strong>Phone: </strong>+84 0343903298</p>
-            <p><strong>Hours: </strong>7:00 - 22, Mon - Sat</p>
-            <div class="follow">
-                <h4>Follow us</h4>
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-youtube"></i>
-                </div>
+          <img
+            class="logo"
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/logo.png"
+            alt=""
+          />
+          <h4>Contact</h4>
+          <p>
+            <strong>Address: </strong>562 Wellington Road,Street 32, San
+            Francisco
+          </p>
+          <p><strong>Phone: </strong>+84 0343903298</p>
+          <p><strong>Hours: </strong>7:00 - 22, Mon - Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
             </div>
-            
+          </div>
         </div>
         <div class="col">
-            <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+          <h4>About</h4>
+          <a href="#">About us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
         </div>
         <div class="col">
-            <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
         </div>
         <div class="col install">
-            <h4>Install App</h4>
-            <p>From AppStore or Google Play</p>
-            <div class="row">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/pay/app.jpg" alt="">
-                <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways</p>
-            <img src="./img/Build-and-Deploy-Ecommerce-Website-main/img/pay/pay.png" alt="">
+          <h4>Install App</h4>
+          <p>From AppStore or Google Play</p>
+          <div class="row">
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/pay/app.jpg"
+              alt=""
+            />
+            <img
+              src="./img/Build-and-Deploy-Ecommerce-Website-main/img/pay/play.jpg"
+              alt=""
+            />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img
+            src="./img/Build-and-Deploy-Ecommerce-Website-main/img/pay/pay.png"
+            alt=""
+          />
         </div>
         <div class="copyright">
-            <p> ©2022. My Team -HTML CSS JavaScript Web</p>
+          <p>©2022. My Team -HTML CSS JavaScript Web</p>
         </div>
-    </footer>
-
-
-
-
+      </footer>
+    </div>
     <script src="./main.js"></script>
-</body>
+    <script>
+      Validator({
+        form: "#form-1",
+        formGroupSelector: ".form-group",
+        errorSelector: ".form-message",
+        rules: [
+          Validator.isRequired(
+            "#fullname",
+            "Vui lòng nhập họ và tên đầy đủ của bạn"
+          ),
+          Validator.isEmail("#email"),
+          Validator.minLength("#password", 6),
+          Validator.isRequired("#password_confirmation"),
+          Validator.isRequired("#province"),
+          // Validator.isRequired('input[name="gender"]'),
+          Validator.isConfirmed(
+            "#password_confirmation",
+            function () {
+              return document.querySelector("#form-1 #password").value;
+            },
+            "Mật khẩu nhập lại không chính xác"
+          ),
+        ],
+        onSubmit: function (data) {
+          //Call API
+          // data.map((e) => {
+          //   if (e.email === mail && e.password === pass) {
+          //     console.log("oke");
+          //   }
+          // });
+          console.log(data);
+        },
+      });
+
+      Validator({
+        form: "#form-2",
+        formGroupSelector: ".form-group",
+        errorSelector: ".form-message",
+        rules: [
+          Validator.isEmail("#email"),
+          Validator.minLength("#password", 6),
+          //   Validator.isRequired("#password_confirmation"),
+          //   Validator.isRequired("#province"),
+          //   Validator.isRequired('input[name="gender"]'),
+          //   Validator.isConfirmed(
+          //     "#password_confirmation",
+          //     function () {
+          //       return document.querySelector("#form-1 #password").value;
+          //     },
+          //     "Mật khẩu nhập lại không chính xác"
+          //   ),
+        ],
+        onSubmit: function (data) {
+          //Call API
+          // alert("dang nhap thanh cong");
+          // console.log(data);
+          // data.map((e) => {
+          //   if (e.email === mail && e.password === pass) {
+          //     console.log("oke");
+          //   }
+          // });
+        },
+      });
+    </script>
+  </body>
 </html>
