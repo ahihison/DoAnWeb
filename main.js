@@ -258,11 +258,11 @@ var home = document.querySelector(".home");
 var shop = document.querySelector(".shop");
 var btnHome = document.querySelector(".btn-up");
 window.onscroll = function (e) {
-  if (window.scrollY >= 1000) {
+  if (window.scrollY >= 942) {
     home.classList.remove("active");
     shop.classList.add("active");
   }
-  if (window.scrollY < 1000) {
+  if (window.scrollY < 942) {
     shop.classList.remove("active");
     home.classList.add("active");
   }
@@ -301,21 +301,6 @@ if (logout) {
   });
 }
 
-// if (checkSingup) {
-//   checkSingup.addEventListener("click", () => {
-//     validation1.classList.remove("active");
-//     toastSuccess.classList.add("active");
-//     container.classList.remove("active");
-//   });
-// }
-
-// if (checkSingin) {
-//   checkSingin.addEventListener("click", () => {
-//     validation2.classList.remove("active");
-//     toastSuccess.classList.add("active");
-//     // container.classList.remove("active");
-//   });
-// }
 if (btnclose) {
   btnclose.addEventListener("click", () => {
     container.classList.remove("active");
@@ -417,7 +402,7 @@ const product = [
     id: 2,
     image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg",
     span: "Adidas",
-    title: "Cartoon Astronaut T-Shirts",
+    title: "T-shirt Basic ",
     price: 78,
   },
   {
@@ -430,105 +415,114 @@ const product = [
   {
     id: 4,
     image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f4.jpg",
-    span: "Adidas",
+    span: "Gucci",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 5,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
-    span: "Adidas",
-    title: "Cartoon Astronaut T-Shirts",
+    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n1.jpg",
+    span: "Gucci",
+    title: "Sweeter Basic",
     price: 78,
   },
   {
     id: 6,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f5.jpg",
-    span: "Adidas",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi1.jpg",
+    span: "Gucci",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 7,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f6.jpg",
+    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n3.jpg",
     span: "Adidas",
-    title: "Cartoon Astronaut T-Shirts",
+    title: "Normal Clothes",
     price: 78,
   },
   {
     id: 8,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f7.jpg",
+    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n4.jpg",
     span: "Adidas",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 9,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f8.jpg",
+    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/n5.jpg",
     span: "Adidas",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 10,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
-    span: "Adidas",
+    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f6.jpg",
+    span: "Gucci",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 11,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi1.jpg",
     span: "Adidas",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 12,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg",
-    span: "Adidas",
-    title: "Cartoon Astronaut T-Shirts",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi2.jpg",
+    span: "Gucci",
+    title: "Jacket Man Basic",
     price: 78,
   },
   {
     id: 13,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi3.jpg",
     span: "Adidas",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 14,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi4.jpg",
     span: "Adidas",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 15,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
-    span: "Adidas",
-    title: "Cartoon Astronaut T-Shirts",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi5.jpg",
+    span: "Gucci",
+    title: "Jean jacket",
     price: 78,
   },
   {
     id: 16,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi6.jpg",
     span: "Adidas",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 17,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/t-shirt1.jpg",
     span: "Adidas",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
   {
     id: 18,
-    image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg",
-    span: "Adidas",
+    image:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/t-shirt2.jpg",
+    span: "Gucci",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
@@ -549,7 +543,7 @@ const product = [
   {
     id: 21,
     image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f3.jpg",
-    span: "Adidas",
+    span: "Gucci",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
@@ -563,7 +557,7 @@ const product = [
   {
     id: 23,
     image: "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
-    span: "Adidas",
+    span: "Gucci",
     title: "Cartoon Astronaut T-Shirts",
     price: 78,
   },
@@ -583,25 +577,41 @@ const detailProduct = [
     price: 139.0,
     detail:
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world, with a total combined production of production total of 61 million bales annually. The United States is currently the largest exporter of raw cotton, with sales of $4.9 billion annually. The worldwide cotton market is estimated to total at $12 billion.",
+    imgsmall1:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
+    imgsmall2:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg",
+    imgsmall3:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f3.jpg",
+    imgsmall4:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f4.jpg",
   },
   {
     id: 2,
-    title: "Home /T-Shirt",
+    title: "Jacket",
     header: "Main's Fashion T Shirt",
     price: 100.0,
     detail:
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world",
+    imgsmall1:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi1.jpg",
+    imgsmall2:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi2.jpg",
+    imgsmall3:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi3.jpg",
+    imgsmall4:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/somi4.jpg",
   },
   {
     id: 3,
-    title: "Home /T-Shirt",
+    title: "Sweeter",
     header: "Main's Fashion T Shirt",
     price: 100.0,
     detail:
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world",
   },
   {
-    id: 1,
+    id: 4,
     title: "Home /T-Shirt",
     header: "Main's Fashion T Shirt",
     price: 139.0,
@@ -609,7 +619,7 @@ const detailProduct = [
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world, with a total combined production of production total of 61 million bales annually. The United States is currently the largest exporter of raw cotton, with sales of $4.9 billion annually. The worldwide cotton market is estimated to total at $12 billion.",
   },
   {
-    id: 2,
+    id: 5,
     title: "Home /T-Shirt",
     header: "Main's Fashion T Shirt",
     price: 100.0,
@@ -617,15 +627,23 @@ const detailProduct = [
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world",
   },
   {
-    id: 3,
+    id: 6,
     title: "Home /T-Shirt",
     header: "Main's Fashion T Shirt",
     price: 100.0,
     detail:
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world",
+    imgsmall1:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg",
+    imgsmall2:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f2.jpg",
+    imgsmall3:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f3.jpg",
+    imgsmall4:
+      "./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f4.jpg",
   },
   {
-    id: 1,
+    id: 7,
     title: "Home /T-Shirt",
     header: "Main's Fashion T Shirt",
     price: 139.0,
@@ -633,7 +651,7 @@ const detailProduct = [
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world, with a total combined production of production total of 61 million bales annually. The United States is currently the largest exporter of raw cotton, with sales of $4.9 billion annually. The worldwide cotton market is estimated to total at $12 billion.",
   },
   {
-    id: 2,
+    id: 8,
     title: "Home /T-Shirt",
     header: "Main's Fashion T Shirt",
     price: 100.0,
@@ -641,7 +659,7 @@ const detailProduct = [
       "Cotton, the most common T-shirt material, has been grown by humans for over 7,000 years. The first evidence of cotton use was found in the city of Mehrgarh, one of the earliest South Asian farming settlements in the world. China and India are currently the two largest producers of cotton in the world",
   },
   {
-    id: 3,
+    id: 9,
     title: "Home /T-Shirt",
     header: "Main's Fashion T Shirt",
     price: 100.0,
@@ -704,13 +722,44 @@ let end = perPage;
 var btn2 = document.querySelector(".btn-2");
 var btnNext = document.querySelector(".btn-next");
 var btnPrev = document.querySelector(".btn-prev");
+var btnNext1 = document.querySelector(".btn-next1");
+var btnPrev1 = document.querySelector(".btn-prev1");
+var btnNext2 = document.querySelector(".btn-next2");
+var btnPrev2 = document.querySelector(".btn-prev2");
+
 const totalPage = Math.ceil(product.length / perPage);
+var productGucci = countProductGucci();
+var productAdidas = countProductAdidas();
+const totalPageGucci = Math.ceil(productGucci.length / perPage);
+const totalPageAdidas = Math.ceil(productAdidas.length / perPage);
+
 function getCurentPage(currentPages) {
   start = (currentPages - 1) * perPage;
   end = currentPages * perPage;
 }
-function renderProduct() {
+
+function countProductGucci() {
+  var productGucci = [];
+  product.map((item, index) => {
+    if (item.span == "Gucci") {
+      productGucci.push(product[index]);
+    }
+  });
+  return productGucci;
+}
+function countProductAdidas() {
+  var productAdidas = [];
+  product.map((item, index) => {
+    if (item.span == "Adidas") {
+      productAdidas.push(product[index]);
+    }
+  });
+  return productAdidas;
+}
+
+function renderProduct(product) {
   html = "";
+
   const content = product.map((item, index) => {
     if (index >= start && index < end) {
       html += `<div class="pro">`;
@@ -725,11 +774,11 @@ function renderProduct() {
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
   </div>`;
-      html += `<h4>$` + item.price + `</h4>`;
+      html += `<h4>$` + item.price + `.00</h4>`;
       html += `</div>`;
-      html += `<a href="#">
+      html += `
     <i class="fa-solid fa-heart cart"></i>
-  </a>`;
+  `;
       html += `</div>`;
     }
     return html;
@@ -737,9 +786,99 @@ function renderProduct() {
 
   document.querySelector(".pro-container").innerHTML = html;
 }
+function renderProductGucci(start, end) {
+  html = "";
 
-renderProduct();
-renderListPage();
+  const content = productGucci.map((item, index) => {
+    if (index >= start && index < end) {
+      html += `<div class="pro">`;
+      html += `<img src=` + item.image + `/>`;
+      html += `<div class="des">`;
+      html += `<span>` + item.span + `</span>`;
+      html += `<h5>` + item.title + `</h5>`;
+      html += `<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>`;
+      html += `<h4>$` + item.price + `.00</h4>`;
+      html += `</div>`;
+      html += `
+    <i class="fa-solid fa-heart cart"></i>
+  `;
+      html += `</div>`;
+    }
+    return html;
+  });
+
+  document.querySelector(".pro-container-gucci").innerHTML = html;
+}
+function renderProducAdidas() {
+  html = "";
+
+  const content = productAdidas.map((item, index) => {
+    if (index >= start && index < end) {
+      html += `<div class="pro">`;
+      html += `<img src=` + item.image + `/>`;
+      html += `<div class="des">`;
+      html += `<span>` + item.span + `</span>`;
+      html += `<h5>` + item.title + `</h5>`;
+      html += `<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>`;
+      html += `<h4>$` + item.price + `.00</h4>`;
+      html += `</div>`;
+      html += `
+    <i class="fa-solid fa-heart cart"></i>
+  `;
+      html += `</div>`;
+    }
+    return html;
+  });
+
+  document.querySelector(".pro-container-adidas").innerHTML = html;
+}
+
+function renderListPageGucci(totalPageGucci) {
+  let html = "";
+  html += `<button class="active">${1}</button>`;
+  for (let i = 2; i <= totalPageGucci; i++) {
+    html += `<button>${i}</button>`;
+  }
+
+  document.querySelector(".number-page1").innerHTML = html;
+}
+function renderListPageAdidas(totalPageAdidas) {
+  let html = "";
+  html += `<button class="active">${1}</button>`;
+  for (let i = 2; i <= totalPageAdidas; i++) {
+    html += `<button>${i}</button>`;
+  }
+
+  document.querySelector(".number-page2").innerHTML = html;
+}
+function gucciProduct() {
+  renderProductGucci();
+  renderListPageGucci(totalPageGucci);
+  btnChangepageGucci(btnNext1, btnPrev1, totalPageGucci);
+  changePageGucci();
+}
+function adidasProduct() {
+  renderProducAdidas();
+  renderListPageAdidas(totalPageAdidas);
+  btnChangepageAdidas(btnNext2, btnPrev2, totalPageAdidas);
+  ChangepageAdidas();
+}
+renderProduct(product);
+// getGucciProduct();
+renderListPage(totalPage);
+
 var ProductList = document.querySelectorAll("#product1 .pro");
 function changePrice(i) {
   var pricePro = document.querySelector(".price-pro-detail");
@@ -747,18 +886,58 @@ function changePrice(i) {
   inputChange.addEventListener("change", () => {
     const val = document.querySelector(".total-cartshop input").value;
     var totalPrice = val * product[i].price;
-    console.log(product[i].price);
     pricePro.innerHTML = `$${totalPrice}.00`;
   });
 }
+
 function getIndexProduct(index) {
-  console.log(index);
   html = "";
-  html += `<h6>` + detailProduct[index].title + `</h6> `;
+  html += `<div class="detail-pro">
+      
+  <section id="prodetails" class="section-p1">
+   <div class="single-pro-image">
+     <div class="close-detail"><i class="fa-solid fa-xmark btn-close-detail
+       "></i></div>
+       <img class="shop-item-img" src="./img/Build-and-Deploy-Ecommerce-Website-main/img/products/f1.jpg" width="100%" height="300px" id="MainImg" alt="">
+       <div class="small-img-group">
+           <div class="small-img-col">`;
+  html +=
+    `<img src="` +
+    detailProduct[index].imgsmall1 +
+    `" width="100%" height="87%" class ="small-img" alt="">`;
+
+  html += `
+           </div>`;
+
+  html += `
+           <div class="small-img-col">`;
+  html +=
+    `<img src="` +
+    detailProduct[index].imgsmall2 +
+    `" width="100%" height="87%" class ="small-img" alt="">`;
+  html += `</div>
+    <div class="small-img-col">`;
+  html +=
+    `<img src="` +
+    detailProduct[index].imgsmall3 +
+    `" width="100%" height="87%" class ="small-img" alt="">`;
+  html += `</div>
+    <div class="small-img-col">`;
+  html +=
+    `<img src="` +
+    detailProduct[index].imgsmall4 +
+    `" width="100%" height="87%" class ="small-img" alt="">`;
+  html += ` </div>`;
+  html += ` </div>`;
+  html += ` </div>`;
+  html += `     
+   <div class="single-pro-details">`;
+  html +=
+    `<h6 class ="shop-item-title">` + detailProduct[index].title + `</h6> `;
   html += `<h4>` + detailProduct[index].header + `</h4>`;
   html +=
-    `<h2 class="price-pro-detail"> $` + detailProduct[index].price + `</h2>`;
-  html += ` <select name="" id="">
+    `<h2 class="price-pro-detail"> $` + detailProduct[index].price + `.00</h2>`;
+  html += ` <select class="size-product-detail" name="" id="">
         <option value="">Select size</option>
         <option value="">XL</option>
         <option value="">XXL</option>
@@ -766,33 +945,53 @@ function getIndexProduct(index) {
         <option value="">Large</option>
     </select>
     <div class="total-cartshop"> <input type="number" value="1" min="1">
-      <button class="normal">Add To Cart</button></div>
+      <button class="normal shop-item-button">Add To Cart</button></div>
 
     <h4>Product Details</h4>
     <div class="details-product">`;
   html += `<span>` + detailProduct[index].detail + `</span>`;
+
   html += `</div>`;
-  document.querySelector(".single-pro-details").innerHTML = html;
+  html += `</div>
+  </section>
+
+   </div>
+`;
+  document.querySelector(".detail-container").innerHTML = html;
+  changerSmallProduct();
+  closeDetail();
 }
+var containerDetail = document.querySelector(".container-detail");
 
 function innerDetail() {
   const currentProduct = document.querySelectorAll("#product1 .pro");
-
+  console.log(currentProduct);
   for (let i = 0; i < currentProduct.length; i++) {
     currentProduct[i].addEventListener("click", () => {
       getIndexProduct(i);
+      console.log(currentProduct[i]);
       changePrice(i);
       productDetail.classList.add("active");
-      container.classList.add("active");
+      // container.classList.add("active");
+      containerDetail.classList.add("active");
+      var addToCartButtons = document.querySelectorAll(".shop-item-button");
+      console.log(addToCartButtons);
+
+      var button = addToCartButtons[0];
+      button.addEventListener("click", addToCartClicked);
+
       if (currentPages == 2) {
         getIndexProduct(i + perPage);
+        changerSmallProduct();
         changePrice(i);
+        closeDetail();
       }
     });
   }
 }
+
 innerDetail();
-function renderListPage() {
+function renderListPage(totalPage) {
   let html = "";
   html += `<button class="active">${1}</button>`;
   for (let i = 2; i <= totalPage; i++) {
@@ -803,72 +1002,264 @@ function renderListPage() {
 }
 function changePage() {
   const currentPage = document.querySelectorAll(".number-page button");
-  // console.log(btnActive);
-  // console.log(currentPage);
+
   for (let i = 0; i < currentPage.length; i++) {
     currentPage[i].addEventListener("click", () => {
       const value = i + 1;
       currentPages = value;
       getCurentPage(currentPages);
-      renderProduct();
+      renderProduct(product);
       innerDetail();
-      changePrice(i);
+      // changePrice(i);
       const btnActive = document.querySelector("button.active");
       btnActive.classList.remove("active");
       currentPage[i].classList.add("active");
     });
   }
 }
+function changePageGucci() {
+  const currentPage = document.querySelectorAll(".number-page1 button");
+  currentPages = 1;
 
+  for (let i = 0; i < currentPage.length; i++) {
+    currentPage[i].addEventListener("click", () => {
+      const value = i + 1;
+      currentPages = value;
+      getCurentPage(currentPages);
+      renderProductGucci(start, end);
+      innerDetail();
+      // changePrice(i);
+      const btnActive = document.querySelector(".number-page1 button.active");
+
+      btnActive.classList.remove("active");
+      currentPage[i].classList.add("active");
+    });
+  }
+}
+function ChangepageAdidas() {
+  const currentPage = document.querySelectorAll(".number-page2 button");
+
+  currentPages = 1;
+  for (let i = 0; i < currentPage.length; i++) {
+    currentPage[i].addEventListener("click", () => {
+      const value = i + 1;
+      currentPages = value;
+      getCurentPage(currentPages);
+      renderProducAdidas(start, end);
+      innerDetail();
+      // changePrice(i);
+      const btnActive = document.querySelector(".number-page2 button.active");
+
+      btnActive.classList.remove("active");
+      currentPage[i].classList.add("active");
+    });
+  }
+}
+var allProduct = document.querySelector(".all-product");
+var gucciProduct = document.querySelector(".gucci-product");
+var adidasProduct = document.querySelector(".adidas-product");
+var procontainer = document.querySelector("#product1 .pro-container");
+var pagingItem = document.querySelector(".paging-item");
+var containerAllProduct = document.querySelector(".container-product-all");
+var numberPage = document.querySelector(".number-page");
+var pagingItem1 = document.querySelector(".paging-item1");
+var pagingItem2 = document.querySelector(".paging-item2");
+
+gucciProduct.addEventListener("click", () => {
+  procontainer.classList.add("remove");
+  procontainer.classList.add("pro-container-gucci");
+  pagingItem.classList.add("active");
+  pagingItem1.classList.add("active");
+  procontainer.classList.remove("remove");
+  procontainer.classList.remove("pro-container-adidas");
+  pagingItem2.classList.remove("active");
+  gucciProduct.classList.add("active");
+  allProduct.classList.add("color");
+
+  adidasProduct.classList.remove("active");
+  start = 0;
+  end = perPage;
+  renderProductGucci(start, end);
+  renderListPageGucci(totalPageGucci);
+  btnChangepageGucci(btnNext1, btnPrev1, totalPageGucci);
+  changePageGucci();
+  innerDetail();
+});
+adidasProduct.addEventListener("click", () => {
+  procontainer.classList.remove("remove");
+  procontainer.classList.remove("pro-container-gucci");
+  pagingItem.classList.remove("active");
+  pagingItem1.classList.remove("active");
+  procontainer.classList.add("remove");
+  procontainer.classList.add("pro-container-adidas");
+  pagingItem.classList.add("active");
+  pagingItem2.classList.add("active");
+  adidasProduct.classList.add("active");
+  allProduct.classList.add("color");
+  gucciProduct.classList.remove("active");
+  start = 0;
+  end = perPage;
+  renderProducAdidas(start, end);
+
+  renderListPageAdidas(totalPageAdidas);
+  btnChangepageAdidas(btnNext2, btnPrev2, totalPageAdidas);
+  ChangepageAdidas();
+  innerDetail();
+});
+allProduct.addEventListener("click", () => {
+  procontainer.classList.remove("remove");
+  procontainer.classList.remove("pro-container-gucci");
+  pagingItem.classList.add("active");
+  pagingItem1.classList.remove("active");
+  procontainer.classList.remove("remove");
+  procontainer.classList.remove("pro-container-adidas");
+  pagingItem.classList.remove("active");
+  pagingItem2.classList.remove("active");
+  adidasProduct.classList.remove("active");
+  gucciProduct.classList.remove("active");
+  allProduct.classList.add("active");
+  allProduct.classList.remove("color");
+
+  renderProduct(product);
+  innerDetail();
+});
 changePage();
-btnNext.addEventListener("click", () => {
-  currentPages++;
-  if (currentPages > totalPage) {
-    currentPages = totalPage;
-  } else {
-    const btnActive = document.querySelector("button.active");
-    btnActive.classList.remove("active");
-    let nextBtnActive = btnActive.nextElementSibling;
-    nextBtnActive.classList.add("active");
-  }
-  getCurentPage(currentPages);
+function btnChangepage(btnNext, btnPrev, totalPage) {
+  btnNext.addEventListener("click", () => {
+    currentPages++;
+    if (currentPages > totalPage) {
+      currentPages = totalPage;
+    } else {
+      const btnActive = document.querySelector(".number-page button.active");
 
-  renderProduct();
-  innerDetail();
-  changePrice(i);
-});
-btnPrev.addEventListener("click", () => {
-  currentPages--;
-
-  if (currentPages < 1) {
-    currentPages = 1;
-  } else {
-    const btnActive = document.querySelector("button.active");
-    btnActive.classList.remove("active");
-    let prevBtnActive = btnActive.previousElementSibling;
-    if (prevBtnActive) {
-      prevBtnActive.classList.add("active");
+      btnActive.classList.remove("active");
+      let nextBtnActive = btnActive.nextElementSibling;
+      nextBtnActive.classList.add("active");
     }
-  }
+    getCurentPage(currentPages);
+    renderProduct(product);
+    innerDetail();
+  });
+  btnPrev.addEventListener("click", () => {
+    currentPages--;
 
-  getCurentPage(currentPages);
-  renderProduct();
-  innerDetail();
-  changePrice(i);
-});
+    if (currentPages < 1) {
+      currentPages = 1;
+    } else {
+      const btnActive = document.querySelector("button.active");
+      btnActive.classList.remove("active");
+      let prevBtnActive = btnActive.previousElementSibling;
+      if (prevBtnActive) {
+        prevBtnActive.classList.add("active");
+      }
+    }
 
+    getCurentPage(currentPages);
+
+    renderProduct(product);
+    innerDetail();
+    // changePrice(i);
+  });
+}
+btnChangepage(btnNext, btnPrev, totalPage);
+// btnChangepageGucci(btnNext, btnPrev, totalPageGucci);
+function btnChangepageGucci(btnNext, btnPrev, totalPage) {
+  btnNext.addEventListener("click", () => {
+    currentPages++;
+    if (currentPages > totalPage) {
+      currentPages = totalPage;
+    } else {
+      const btnActive = document.querySelector(".number-page1 button.active");
+
+      btnActive.classList.remove("active");
+      let nextBtnActive = btnActive.nextElementSibling;
+      nextBtnActive.classList.add("active");
+    }
+    getCurentPage(currentPages);
+    renderProductGucci(start, end);
+    innerDetail();
+    // changePrice(i);
+  });
+  btnPrev.addEventListener("click", () => {
+    currentPages--;
+
+    if (currentPages < 1) {
+      currentPages = 1;
+    } else {
+      const btnActive = document.querySelector(".number-page1 button.active");
+      btnActive.classList.remove("active");
+      let prevBtnActive = btnActive.previousElementSibling;
+      if (prevBtnActive) {
+        prevBtnActive.classList.add("active");
+      }
+    }
+
+    getCurentPage(currentPages);
+    renderProductGucci(start, end);
+    innerDetail();
+    // changePrice(i);
+  });
+}
+function btnChangepageAdidas(btnNext, btnPrev, totalPage) {
+  btnNext.addEventListener("click", () => {
+    currentPages++;
+    if (currentPages > totalPage) {
+      currentPages = totalPage;
+    } else {
+      const btnActive = document.querySelector(".number-page2 button.active");
+
+      btnActive.classList.remove("active");
+      let nextBtnActive = btnActive.nextElementSibling;
+      nextBtnActive.classList.add("active");
+    }
+    getCurentPage(currentPages);
+    renderProducAdidas(start, end);
+    innerDetail();
+    // changePrice(i);
+  });
+  btnPrev.addEventListener("click", () => {
+    currentPages--;
+
+    if (currentPages < 1) {
+      currentPages = 1;
+    } else {
+      const btnActive = document.querySelector(".number-page2 button.active");
+      btnActive.classList.remove("active");
+      let prevBtnActive = btnActive.previousElementSibling;
+      if (prevBtnActive) {
+        prevBtnActive.classList.add("active");
+      }
+    }
+
+    getCurentPage(currentPages);
+    renderProducAdidas(start, end);
+    innerDetail();
+    // changePrice(i);
+  });
+}
 // var itemProduct = document.querySelector("#product1 .pro");
 var productDetail = document.querySelector(".detail-container");
-var btnCloseDetail = document.querySelector(".close-detail");
+
 // itemProduct.addEventListener("click", () => {
 //   productDetail.classList.add("active");
 //   container.classList.add("active");
 // });
-btnCloseDetail.addEventListener("click", () => {
-  productDetail.classList.remove("active");
-  container.classList.remove("active");
+productDetail.addEventListener("click", (e) => {
+  e.stopPropagation();
 });
+function closeDetail() {
+  var btnCloseDetail = document.querySelectorAll(".close-detail");
+  for (var i = 0; i < btnCloseDetail.length; i++) {
+    btnCloseDetail[i].addEventListener("click", () => {
+      productDetail.classList.remove("active");
+      containerDetail.classList.remove("active");
+    });
+  }
+}
 
+containerDetail.addEventListener("click", () => {
+  containerDetail.classList.remove("active");
+});
 // function getVal() {
 //   const val = document.querySelector(".total-cartshop input").value;
 // }
@@ -876,17 +1267,181 @@ btnCloseDetail.addEventListener("click", () => {
 // getVal();
 // Change item product
 
-var MainImg = document.getElementById("MainImg");
-var smallimg = document.getElementsByClassName("small-img");
-smallimg[0].onclick = function () {
-  MainImg.src = smallimg[0].src;
-};
-smallimg[1].onclick = function () {
-  MainImg.src = smallimg[1].src;
-};
-smallimg[2].onclick = function () {
-  MainImg.src = smallimg[2].src;
-};
-smallimg[3].onclick = function () {
-  MainImg.src = smallimg[3].src;
-};
+function changerSmallProduct() {
+  var MainImg = document.getElementById("MainImg");
+  var smallimg = document.getElementsByClassName("small-img");
+
+  smallimg[0].onclick = function () {
+    MainImg.src = smallimg[0].src;
+  };
+  smallimg[1].onclick = function () {
+    MainImg.src = smallimg[1].src;
+  };
+  smallimg[2].onclick = function () {
+    MainImg.src = smallimg[2].src;
+  };
+  smallimg[3].onclick = function () {
+    MainImg.src = smallimg[3].src;
+  };
+}
+
+// Shop cart
+if (document.readyState == "loading") {
+  document.addEventListener("DOMContentLoaded", ready);
+} else {
+  ready();
+}
+function ready() {
+  var removeItemShopCart = document.querySelectorAll(".btn-close-shopcart");
+
+  for (var i = 0; i < removeItemShopCart.length; i++) {
+    var button = removeItemShopCart[i];
+    button.addEventListener("click", removeCartItem);
+  }
+  var quantityInputs = document.querySelectorAll(".cart-quality");
+
+  for (var i = 0; i < quantityInputs.length; i++) {
+    var input = quantityInputs[i];
+    input.addEventListener("change", quantityChange);
+  }
+  var addToCartButtons = document.querySelectorAll(".shop-item-button");
+
+  for (var i = 0; i < addToCartButtons.length; i++) {
+    var button = addToCartButtons[i];
+    button.addEventListener("click", addToCartClicked);
+  }
+  document
+    .querySelectorAll(".btn-purchase")[0]
+    .addEventListener("click", purChaseClicked);
+}
+function purChaseClicked() {
+  alert("Thanks you for your purchase");
+  var cartItems = document.querySelectorAll(".cart-items")[0];
+  while (cartItems.hasChildNodes()) {
+    cartItems.removeChild(cartItems.firstChild);
+  }
+  updateCartTotal();
+}
+function addToCartClicked(e) {
+  var button = e.target;
+  document.querySelector(".cart-no-item").classList.add("active");
+  document.querySelector(".table-bill").classList.add("active");
+  document.querySelector(".cart-total-bill").classList.add("active");
+  document.querySelector(".container-content-no-item").classList.add("active");
+  var shopItem = button.parentElement.parentElement;
+  var title = shopItem.querySelectorAll(".shop-item-title")[0].innerText;
+  var price = shopItem.querySelectorAll(".price-pro-detail")[0].innerText;
+  var imgSrc = document.querySelectorAll(".shop-item-img")[0].src;
+  var e = document.querySelector(".size-product-detail");
+
+  addItemToCart(title, price, imgSrc);
+  updateCartTotal();
+}
+function addItemToCart(title, price, imgSrc) {
+  var cartRow = document.createElement("tr");
+  cartRow.classList.add("cart-row");
+  var cartItems = document.querySelectorAll(".cart-items")[0];
+  var carItemNames = document.querySelectorAll(".cart-item-title");
+  for (var i = 0; i < carItemNames.length; i++) {
+    if (carItemNames[i].innerText == title) {
+      alert("This item is already added to the cart");
+      return;
+    }
+  }
+  var cartRowContent = `<td>
+  <a class="btn-close-shopcart" href="#"><i class="far fa-times-circle "></a></i>
+  </td>
+  <td><img src="${imgSrc}" alt=""></td>
+  <td class="cart-item-title">${title}</td>
+  <td class="cart-price">${price}</td>
+  <td ><input class="cart-quality" type="number" value="1" min="1"></td>
+  <td><select class="size-product-detail" name="" id="">
+  <option value="">Select size</option>
+  <option value="">XL</option>
+  <option value="">XXL</option>
+  <option value="">Small</option>
+  <option value="">Large</option>
+</select>
+  </td>`;
+  cartRow.innerHTML = cartRowContent;
+  cartItems.append(cartRow);
+  cartRow
+    .querySelectorAll(".btn-close-shopcart")[0]
+    .addEventListener("click", removeCartItem);
+
+  cartRow
+    .querySelectorAll(".cart-quality")[0]
+    .addEventListener("change", quantityChange);
+}
+function removeCartItem(e) {
+  var buttonClicked = e.target;
+  if (buttonClicked) {
+    alert("are you sure");
+  }
+  buttonClicked.parentElement.parentElement.parentElement.remove();
+  updateCartTotal();
+}
+function quantityChange(e) {
+  var input = e.target;
+  if (isNaN(input.value) || input.value <= 0) {
+    input.value = 1;
+  }
+  updateCartTotal();
+}
+
+function updateCartTotal() {
+  var cartItemContainer = document.querySelectorAll(".cart-items")[0];
+  var cartRows = cartItemContainer.querySelectorAll(".cart-row");
+
+  var total = 0;
+  for (var i = 0; i < cartRows.length; i++) {
+    var cartRow = cartRows[i];
+    var priceElement = cartRow.querySelectorAll(".cart-price")[0];
+    var qualityElement = cartRow.querySelectorAll(".cart-quality")[0];
+    var price = parseFloat(priceElement.innerText.replace("$", ""));
+    var quantity = qualityElement.value;
+
+    total = total + price * quantity;
+  }
+  total = Math.round(total * 100) / 100;
+  document.querySelectorAll(".cart-total-price")[0].innerText = `$` + total;
+  document.querySelectorAll(".Last-total-price")[0].innerText = `$` + total;
+}
+document.querySelector(".btn-close-no-item").addEventListener("click", () => {
+  document.querySelector(".container-cart-shop").classList.remove("active");
+});
+document.querySelector(".cart-shop-item").addEventListener("click", () => {
+  document.querySelector(".container-cart-shop").classList.add("active");
+});
+
+var filterInput = document.querySelector(".search-text");
+filterInput.addEventListener("keyup", filterProducts);
+
+function filterProducts() {
+  // pagingItem.classList.add("active");
+  let filterValue = filterInput.value.toUpperCase();
+
+  var productFilter = [];
+  for (let i = 0; i < product.length; i++) {
+    let span = product[i].title;
+    if (span.toUpperCase().indexOf(filterValue) > -1) {
+      productFilter.push(product[i]);
+      renderProduct(productFilter);
+      // renderListPageGucci(productFilter);
+      // getCurentPage(currentPages);
+      renderListPageGucci(ProductList);
+      renderListPageAdidas(productFilter);
+      renderListPage(productFilter);
+    } else {
+      renderProduct(productFilter);
+
+      innerDetail();
+    }
+    if (filterValue == "") {
+      renderListPageGucci(totalPageGucci);
+      renderListPageAdidas(totalPageAdidas);
+      renderListPage(totalPage);
+      innerDetail();
+    }
+  }
+}
