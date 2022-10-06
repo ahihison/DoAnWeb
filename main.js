@@ -792,7 +792,7 @@ function renderProductGucci(start, end) {
   const content = productGucci.map((item, index) => {
     if (index >= start && index < end) {
       html += `<div class="pro">`;
-      html += `<img src=` + item.image + `/>`;
+      html += `<img src=` + item.image + `>`;
       html += `<div class="des">`;
       html += `<span>` + item.span + `</span>`;
       html += `<h5>` + item.title + `</h5>`;
@@ -821,7 +821,7 @@ function renderProducAdidas() {
   const content = productAdidas.map((item, index) => {
     if (index >= start && index < end) {
       html += `<div class="pro">`;
-      html += `<img src=` + item.image + `/>`;
+      html += `<img src=` + item.image + `>`;
       html += `<div class="des">`;
       html += `<span>` + item.span + `</span>`;
       html += `<h5>` + item.title + `</h5>`;
